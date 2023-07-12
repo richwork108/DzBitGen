@@ -10,10 +10,10 @@ Folow this steps detailed below : Open cmd on ur Pc and type in code below.
 git clone https://github.com/richwork108/DzBitGen.git
 ```
 ```
-cd dzbitgen && pip install -r requirements.txt
+cd DzBitGen && pip install -r requirements.txt
 ```
 ```
-python dzbitgen.py
+python DzBitGen.py
 ```
 ### Contact me
 You can contact me via whatsapp or telegram for further Info. 
