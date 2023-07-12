@@ -1,0 +1,11 @@
+PySimpleGUI
+
+ecdsa
+
+base58
+
+pyperclip
+
+alive_progress
+
+requests
