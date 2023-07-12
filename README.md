@@ -7,7 +7,7 @@ This is a python software for educational and testing purposes.
 #### Steps to install
 Folow this steps detailed below : Open cmd on ur Pc and type in code below.
 ```
-git clone https://github.com/ri
+git clone https://github.com/richwork108/DzBitGen.git
 ```
 ```
 cd dzbitgen && pip install -r requirements.txt
