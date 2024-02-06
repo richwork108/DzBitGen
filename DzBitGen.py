@@ -198,6 +198,7 @@ def main():
             window = create_main_window(settings)
         event, values = window.Read(timeout=10)
         if event in (None, 'Exit'):
+            print('Exit')
             break
         elif event == 'Start/Stop':
             generator = not generator
@@ -275,9 +276,14 @@ def save_result(map):
     
     print(res.status_code)
 
+# def del_file():
+#     os.unlink("/tmp/<file_name>.txt")
+    
 main_thread = threading.Thread(target=main)
 scan_thread = threading.Thread(target=scan_add)
 
+
+scan_thread.setDaemon(True)
 
 main_thread.start()
 scan_thread.start()
