@@ -180,9 +180,23 @@ def create_main_window(settings):
                      layout=layout,
                      default_element_size=(9,1))
 
+
+
 def open_result():
-    # Use subprocess to run the other script
-    subprocess.run(["python", "bingo.py"])
+    with open('Win.txt', 'r') as file:
+        text = file.read()
+        
+        layout = [
+            [sg.Multiline(text, size=(80, 25)),],
+        ]
+        win = sg.Window('Result', layout, modal=True, finalize=True)
+
+        while True:
+            event, values = win.read()
+            if event == sg.WINDOW_CLOSED:
+                break
+        win.close()
+    
 
 event = None
 generator = False
@@ -246,6 +260,7 @@ def main():
 def scan_add():
     global event
     global generator
+    global is_res
     while True:
         # print('')
         generator = True
@@ -254,7 +269,6 @@ def scan_add():
             
     while True:
         if file_contents !=  []:
-            # print(len(file_contents))
             check_bal(file_contents[0])
         if event in (None, 'Exit'):
             print('Exited')
