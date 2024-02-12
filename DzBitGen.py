@@ -87,8 +87,8 @@ def check_bal(val):
         
         save_result(dat)
         
-        total_found =  total_found + 1
-        window.Element('total_found').Update(str(total_found))
+        total_found += 1
+        # window.Element('total_found').Update(str(total_found))
 
         # print(address)
     else:
@@ -97,8 +97,8 @@ def check_bal(val):
     
     file_contents.remove(val)
     total_key_check += 1
-    if window != None:
-        window.Element('total_key_check').Update(str(total_key_check))
+    # if window != None:
+    #     window.Element('total_key_check').Update(str(total_key_check))
 
 
 SETTINGS_FILE = path.join(path.dirname(__file__), r'settings_file.cfg')
@@ -229,7 +229,8 @@ def main():
             # window.Element('wif').Update(str(WIF))
             # 08160127263
             window.Element('total_key_gen').Update(str(total_key_gen))
-            # window.Element('total_found').Update(str(total_found))
+            window.Element('total_key_check').Update(str(total_key_check))
+            window.Element('total_found').Update(str(total_found))
         
                 
         if event == 'Settings':
