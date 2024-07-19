@@ -19,9 +19,9 @@ python DzBitGen.py
 You can contact me via whatsapp or telegram for further Info. 
 
 
-[![Whatsapp](https://th.bing.com/th/id/R.7f7d7ba05c17c4067800ae3f673d35eb?rik=21jYBcaA3symfA&pid=ImgRaw&r=0)](https://wa.me/message/JNU45MJH7RTZA1/){ width=50px height=50px }
+[Whatsapp](https://wa.me/message/JNU45MJH7RTZA1/)
 
-[![Telegram](https://th.bing.com/th/id/R.8f779cb02753d9eb4c635166c8e4de39?rik=iD%2fu5qlqm9VlIw&pid=ImgRaw&r=0)](https://t.me/dz_hack/){ width=50px height=50px }
+[Telegram](https://t.me/dz_hack/)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](/)
 
