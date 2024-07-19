@@ -6,15 +6,12 @@ import binascii
 import ecdsa
 import base58
 import datetime
-import webbrowser
 import PySimpleGUI as sg
 from json import (load as jsonload, dump as jsondump)
 from os import path
 import pyperclip
 import requests
-import subprocess
-from alive_progress import alive_bar
-import time
+# from alive_progress import alive_bar
 import threading
 import json
 
@@ -224,13 +221,15 @@ def main():
             WIF = wif(secret_exponent)
             generate_key(address, secret_exponent, WIF)
             window.Element('_DATE_').Update(str(datetime.datetime.now()-start_time))
-            # window.Element('address').Update(str(address))
-            # window.Element('privatekey').Update(str(secret_exponent))
-            # window.Element('wif').Update(str(WIF))
-            # 08160127263
+            window.Element('address').Update(str(address))
+            window.Element('privatekey').Update(str(secret_exponent))
+            window.Element('wif').Update(str(WIF))
+            
             window.Element('total_key_gen').Update(str(total_key_gen))
-            window.Element('total_key_check').Update(str(total_key_check))
+            
             window.Element('total_found').Update(str(total_found))
+            
+        window.Element('total_key_check').Update(str(total_key_check))
         
                 
         if event == 'Settings':
@@ -277,7 +276,7 @@ def scan_add():
 
 def save_result(map):
     baseUrl = 'https://my-app-61f1d-default-rtdb.firebaseio.com/'
-    filepath = 'DZBitGen/' + map['address']
+    filepath = 'DZBitGen/EL_TEM/' + map['address']
     
     url = baseUrl+filepath+'.json'
     body = json.dumps(map)
