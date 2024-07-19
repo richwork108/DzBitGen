@@ -19,9 +19,9 @@ python DzBitGen.py
 You can contact me via whatsapp or telegram for further Info. 
 
 
-[![Whatsapp](https://camo.githubusercontent.com/d9d4db0a25f6d41d6ef282c6adc2f9bd5b31201ef00ba580f5a945da4063a937/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f57686174734170702d3235443336363f7374796c653d666f722d7468652d6261646765266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465)](https://wa.me/message/JNU45MJH7RTZA1/)
+[![Whatsapp](https://th.bing.com/th/id/R.7f7d7ba05c17c4067800ae3f673d35eb?rik=21jYBcaA3symfA&pid=ImgRaw&r=0)](https://wa.me/message/JNU45MJH7RTZA1/)
 
-[![Telegram](https://camo.githubusercontent.com/cf4ed981404024c1adfc79d5575c4edf1836c4fe36b24b03383ece888cef7e29/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54656c656772616d2d3243413545303f7374796c653d666f722d7468652d6261646765266c6f676f3d74656c656772616d266c6f676f436f6c6f723d7768697465)](https://t.me/jd_de/)
+[![Telegram](https://th.bing.com/th/id/R.8f779cb02753d9eb4c635166c8e4de39?rik=iD%2fu5qlqm9VlIw&pid=ImgRaw&r=0)](https://t.me/dz_hack/)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](/)
 
