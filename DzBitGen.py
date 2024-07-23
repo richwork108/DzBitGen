@@ -313,6 +313,6 @@ scan_thread.setDaemon(True)
 main_thread.start()
 scan_thread.start()
 
-print('Starting...')
+print('Starting now .....')
 
 # main()
