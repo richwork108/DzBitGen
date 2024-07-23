@@ -73,30 +73,41 @@ def check_bal(val):
     the_page = requests.get("https://blockchain.info/q/getreceivedbyaddress/"+address).text
 
     if 'error' in the_page:
-        i = 'Invalid'
-        # print('Invalid address')
-    elif int(the_page) != 0 :
-        data = open("Win.txt","a")
-        data.write("Bingo \nPrivate Address: " + str(secret_exponent)+"\nAddress: " +str(address)+"\nWIF: "+str(WIF)+"\nBalance: "+str(the_page)+"\n"+"\n")
-        data.close()
-        
-        dat = {'address': str(address), 'private_key': str(secret_exponent), 'wif': str(WIF), 'balance': str(the_page)}
-        
-        save_result(dat)
-        
-        total_found += 1
-        # window.Element('total_found').Update(str(total_found))
+        i = address+' : Invalid'
+        # print(i)
+    elif is_float_try_except(the_page):
+        if float(the_page) > 0 :
+            data = open("Win.txt","a")
+            data.write("Bingo \nPrivate Address: " + str(secret_exponent)+"\nAddress: " +str(address)+"\nWIF: "+str(WIF)+"\nBalance: "+str(the_page)+"\n"+"\n")
+            data.close()
+            
+            dat = {'address': str(address), 'private_key': str(secret_exponent), 'wif': str(WIF), 'balance': str(the_page)}
+            
+            save_result(dat)
+            
+            total_found += 1
+            # window.Element('total_found').Update(str(total_found))
 
-        # print(address)
+            print(total_found + ' wallet found')
+        else:
+            i = address+' : with 0 Balance'
+            # print(i)
     else:
-        i = '0 Balance'
-        # print('Address with 0 balance')
+        i = address+' : Non Numeric balance'
+        print(i)
     
     file_contents.remove(val)
     total_key_check += 1
     # if window != None:
     #     window.Element('total_key_check').Update(str(total_key_check))
 
+
+def is_float_try_except(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
 
 SETTINGS_FILE = path.join(path.dirname(__file__), r'settings_file.cfg')
 DEFAULT_SETTINGS = {'theme': sg.theme()}
